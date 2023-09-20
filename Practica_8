@@ -1,0 +1,75 @@
+Algoritmo Practica_8
+//Definims variables como enteros 
+    Definir contraseña, num, numero1, numero2, resultado, operacion Como Entero
+    //inicializamos contraseña
+    contraseña <- 2330;
+    //Validamos contraseña correcta hasta que la contraseña sea correcta
+    Repetir
+        Escribir "ingrese la contraseña: "
+        Leer contraseñaIngresada;
+        Si contraseñaIngresada <> contraseña Entonces
+            Escribir "Contraseña incorrecta. Intenta de nuevo"
+        FinSi
+    Hasta Que contraseñaIngresada = contraseña
+
+    //iniciamos cilo de menu de opciones
+    Repetir
+        Escribir "Sumar (1)"
+        Escribir "Restar (2)"
+        Escribir "Multiplicar (3)"
+        Escribir "Dividir (4)"
+        Escribir "Salir (5)"
+        Leer num;
+
+        //Pedimos 2 numeros para cada caso y presentamos antes de repetir otra vez el menu de opciones
+
+        Si num = 1 Entonces
+            Escribir "Ingrese el primer numero:"
+            Leer numero1;
+            Escribir "Ingrese el segundo numero:"
+            Leer numero2;
+            resultado <- numero1 + numero2
+            Escribir "El resultado de la suma es: ", resultado;
+        Sino
+			Si num = 2 Entonces
+				Escribir "Ingrese el primer numero:"
+				Leer numero1;
+				Escribir "Ingrese el segundo numero:"
+				Leer numero2;
+				resultado <- numero1 - numero2
+				Escribir "El resultado de la resta es: ", resultado;
+			Sino
+				Si num = 3 Entonces
+					Escribir "Ingrese el primer numero:"
+					Leer numero1;
+					Escribir "Ingrese el segundo numero:"
+					Leer numero2;
+					resultado <- numero1 * numero2
+					Escribir "El resultado de la multiplicación es: ", resultado;
+				Sino 
+					Si num = 4 Entonces
+						Escribir "Ingrese el primer numero:"
+						Leer numero1;
+						Escribir "Ingrese el segundo numero:"
+						Leer numero2;
+						Si numero2 <> 0 Entonces
+							resultado <- numero1 / numero2
+							Escribir "El resultado de la división es: ", resultado;
+						Sino
+							Escribir "No se puede dividir por cero"
+						FinSi
+					Sino
+//si el usuario seleciona 5 se cierra el programa 
+						Si num = 5 Entonces
+							Escribir "Cerrando sesión"
+						Sino
+							Escribir "Ingrese numero del 1 al 5"
+						FinSi
+					FinSi
+				FinSi
+			FinSi
+		FinSi
+// cerramos el ciclo
+	Hasta Que num = 5
+	
+FinAlgoritmo
