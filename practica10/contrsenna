@@ -1,0 +1,25 @@
+Algoritmo contrasenna
+	
+	Definir clave, intentos Como Entero
+	intentos<-0
+	
+	
+	Repetir
+		intentos<-intentos+1
+		Escribir "Proporciona la clave: "
+		Leer clave
+		
+	Hasta Que (clave==352) O  (clave==259)o(clave==569) O (intentos==3)
+	
+	
+	
+	si (intentos==3) Y (clave<>259) Y (clave<>569) Y (clave<>352) Entonces
+		
+		Escribir "Demasiados intentos"
+	SiNo
+		
+		Escribir "Bienvenido al sistema!!!!!"
+	FinSi
+	
+	
+FinAlgoritmo
