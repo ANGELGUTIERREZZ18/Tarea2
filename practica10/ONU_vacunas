@@ -1,0 +1,78 @@
+Algoritmo ONG_vacunas
+	Definir vacunas,vacunas1,vacunas3,vacunas4,vacunas5 Como Entero
+	Definir i1, i2, i3, i4, i5 Como caracter
+	
+	vacunas <- 1000;
+	Escribir "Ingrese las letras de los 5 puntos de reparto: "
+	Leer i1, i2, i3, i4, i5;
+	
+	Repetir
+		
+			
+		si vacunas >= 200 Entonces
+		Escribir "Vacunas en exisitencia ",vacunas;
+		Escribir "Ingresa las vacunas que nesecitan en el punto ",i1;
+		Leer vacunas1;
+		vacunas1_0 = vacunas1_0 + vacunas1
+		vacunas = vacunas - vacunas1;
+		si vacunas <= 200 Entonces
+			Escribir "TIENES 200 O MENOS VACUNAS. DEBES REPORTARLO"
+		FinSi
+	FinSi
+	
+	si vacunas >= 200 Entonces
+		Escribir "Vacunas en exisitencia ",vacunas;
+		Escribir "Ingresa las vacunas que nesecitan en el punto ",i2;
+		Leer vacunas2;
+		vacunas2_0 = vacunas2_0 + vacunas2
+		vacunas = vacunas - vacunas2;
+		si vacunas <= 200 Entonces
+			Escribir "TIENES 200 O MENOS VACUNAS. DEBES REPORTARLO"
+		FinSi
+	FinSi
+	
+	si vacunas >= 200 Entonces
+		Escribir "Vacunas en exisitencia ",vacunas;
+		Escribir "Ingresa las vacunas que nesecitan en el punto ",i3;
+		Leer vacunas3;
+		vacunas3_0 = vacunas3_0 + vacunas3
+		vacunas = vacunas - vacunas3;
+		si vacunas <= 200 Entonces
+			Escribir "TIENES 200 O MENOS VACUNAS. DEBES REPORTARLO"
+		FinSi
+	FinSi
+	
+	si vacunas >= 200 Entonces
+		Escribir "Vacunas en exisitencia ",vacunas;
+		Escribir "Ingresa las vacunas que nesecitan en el punto ",i4;
+		Leer vacunas4;
+		vacunas4_0 = vacunas4_0 + vacunas4
+		vacunas = vacunas - vacunas4;
+		si vacunas <= 200 Entonces
+			Escribir "TIENES 200 O MENOS VACUNAS. DEBES REPORTARLO"
+		FinSi
+	FinSi
+	
+	si vacunas >= 200 Entonces
+		Escribir "Vacunas en exisitencia ",vacunas;
+		Escribir "Ingresa las vacunas que nesecitan en el punto ",i5;
+		Leer vacunas5;
+		vacunas5_0 = vacunas5_0 + vacunas5
+		vacunas = vacunas - vacunas5;
+		si vacunas <= 200 Entonces
+			Escribir "TIENES 200 O MENOS VACUNAS. DEBES REPORTARLO"
+		FinSi
+	FinSi
+	
+Hasta Que vacunas = 0
+Escribir "Se acabaron las vacunas"
+
+Escribir "Historial de vacunas por punto: "
+Escribir "En el punto ",i1 " se utilizaron: ", vacunas1_0
+Escribir "En el punto ",i2 " se utilizaron: ", vacunas2_0
+Escribir "En el punto ",i3 " se utilizaron: ", vacunas3_0
+Escribir "En el punto ",i4 " se utilizaron: ", vacunas4_0
+Escribir "En el punto ",i5 " se utilizaron: ", vacunas5_0
+
+	
+FinAlgoritmo
