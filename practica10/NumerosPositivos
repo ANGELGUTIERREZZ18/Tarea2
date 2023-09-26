@@ -1,0 +1,25 @@
+Algoritmo NumerosPositivos
+	Definir num Como Entero
+    // Inicializamos el contador de numeros positivos y el contador de numeros negativos
+    contador_positivo <- 0
+    contador_negativo <- 0
+    // Utilizamos un ciclo para pedir 10 numeros
+    Para i <- 1 Hasta 10 Hacer
+        // Solicitamos los numeros al usuario
+        Escribir "Ingrese el numero ", i, ": "
+        Leer num
+        
+        // Validamos si el numero es mayor que cero o menor que cero
+        Si num > 0 Entonces
+            contador_positivo <- contador_positivo + 1
+        FinSi
+		si num < 0 Entonces
+			contador_negativo = contador_negativo + 1 
+		FinSi
+    FinPara
+    
+    // Mostramos la cantidad de numeros positivos y negativos
+    Escribir "La cantidad de numeros mayores que cero es: ", contador_positivo
+	Escribir "La cantidad de números menores que cero es: ", contador_negativo
+FinAlgoritmo
+
