@@ -1,0 +1,26 @@
+Algoritmo Suma_Positivos
+	
+	Definir i, suma Como Entero
+	
+		// Inicializamos la variable suma
+	suma <- 0
+	
+		repetir
+			// Solicitamos un numero al usuario
+			Escribir "Ingresa un numero positivo (si ingresas numero negativo o 0 se termina el proceso): "
+			Leer i
+			
+			// Validamos si el numero es positivo
+			
+			Si i > 0 Entonces
+				
+				// Sumamos el numero a la suma total
+				suma <- suma + i
+			FinSi
+			
+		Hasta Que i <= 0 
+ 
+			// Mostramos la suma de los numeros positivos
+			Escribir "La suma de los números positivos es: ", suma
+
+FinAlgoritmo
