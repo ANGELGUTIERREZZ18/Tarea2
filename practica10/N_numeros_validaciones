@@ -1,0 +1,47 @@
+Algoritmo N_numeros_validaciones
+    // Inicializamos las variables
+    productoParesMenores25 <- 0
+    sumaImparesMayores16 <- 0
+    sumaMultiplos4 <- 0
+    contadorMultiplos4 <- 0
+    
+    // Solicitamos la cantidad de numeros a ingresar (n)
+    Escribir "Ingrese la cantidad de numeros a ingresar: "
+    Leer n
+    
+    // Utilizamos un ciclo para ingresar los n números
+    Para i <- 1 Hasta n Hacer
+        // Solicitamos los numeros al usuario
+        Escribir "Ingrese el número ", i, ": "
+        Leer num
+        
+        //Validamos si el numero es par y menor a 25
+        Si num MOD 2 = 0 Y num < 25 Entonces
+            productoParesMenores25 <- productoParesMenores25 + 1
+        FinSi
+        
+        //Validamos si el numero es impar y mayor a 16
+        Si num MOD 2 <> 0 Y num > 16 Entonces
+            sumaImparesMayores16 <- sumaImparesMayores16 + 1
+        FinSi
+        
+        //Validamos si el numero es múltiplo de 4
+        Si num MOD 4 = 0 Entonces
+            sumaMultiplos4 <- sumaMultiplos4 + num
+            contadorMultiplos4 <- contadorMultiplos4 + 1
+        FinSi
+    FinPara
+    
+    // Validamos que se ingresaron numeros múltiplos de 4 antes de calcular el promedio
+    Si contadorMultiplos4 > 0 Entonces
+        promedioMultiplos4 <- sumaMultiplos4 / contadorMultiplos4
+    Sino
+        promedioMultiplos4 <- 0
+    FinSi
+    
+    // Imprimimos los resultados
+    Escribir "El producto de los numeros pares menores a 25 es: ", productoParesMenores25
+    Escribir "La suma de los numeros impares mayores a 16 es: ", sumaImparesMayores16
+    Escribir "El promedio de los numeros múltiplos de 4 es: ", promedioMultiplos4
+	
+FinAlgoritmo
