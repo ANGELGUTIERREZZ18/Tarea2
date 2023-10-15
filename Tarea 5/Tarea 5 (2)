@@ -1,0 +1,31 @@
+Algoritmo Sumas_de_arreglos
+    // Definir tres arreglos de 45 numeros cada uno.
+    Dimension A[45], B[45], C[45] 
+	
+    // Llenar el arreglo A con valores aleatorios entre 1 y 1000.
+    Escribir "Llenando el arreglo A con valores aleatorios:"
+    Para i = 1 Hasta 45 Con Paso 1 Hacer
+		// Genera numeros aleatorios entre 1 y 1000
+        A[i] <- Azar(999) + 1  
+    Fin Para
+	
+    // Llenar el arreglo B con valores aleatorios entre 1 y 1000.
+    Escribir "Llenando el arreglo B con valores aleatorios:"
+    Para i = 1 Hasta 45 Con Paso 1 Hacer
+		// Genera numeros aleatorios entre 1 y 1000
+        B[i] <- Azar(999) + 1  
+    Fin Para
+	
+    // Calcular la suma de los numeros correspondientes de A y B y almacenarla en C.
+    Para i = 1 Hasta 45 Con Paso 1 Hacer
+		// Suma los numeros correspondientes de A y B
+        C[i] <- A[i] + B[i]  
+    Fin Para
+	
+    // Mostrar el arreglo resultante C y los valores de A y B que se sumaron.
+    Escribir "El arreglo resultante C es:"
+    Para i = 1 Hasta 45 Con Paso 1 Hacer
+        Escribir "A[", i, "] es ", A[i], " + B[", i, "] es ", B[i], " = " "C[", i, "] = ", C[i] 
+    Fin Para
+
+FinAlgoritmo
