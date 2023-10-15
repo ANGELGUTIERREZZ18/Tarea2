@@ -1,0 +1,41 @@
+Algoritmo buscar_mumero_en_vector
+    Dimension X[20] 
+    Definir num, posicion, salir Como Entero
+    Definir encontrado Como Logico
+	
+    // Ciclo principal que se repite hasta que el usuario decida salir.
+    repetir
+        // Llenar el vector X automáticamente con valores del 1 al 20.
+        Para i = 1 Hasta 20 Con Paso 1 Hacer
+			// Genera números aleatorios entre 1 y 20.
+            X[i] <- Azar(20) + 1  
+        Fin Para
+		
+        Escribir "Ingrese el número que desea buscar (Números del 1 al 20):"
+        Leer num
+		
+        // Inicializar el estado de "encontrado" como falso.
+        encontrado <- Falso
+		
+        // Buscar el número en el vector X.
+        Para i = 1 Hasta 20 Con Paso 1 Hacer
+            Si X[i] = num Entonces
+                encontrado <- Verdadero
+				// Almacenar la posición del número si se encuentra.
+                posicion <- i  
+            Fin Si
+        Fin Para
+		
+        // Mostrar el resultado.
+        Si encontrado Entonces
+            Escribir "El número ", num, " se encuentra en la posición ", posicion, " del vector X."
+        Sino
+            Escribir "El número ", num, " NO se encuentra en el vector X."
+        Fin Si
+		
+        Escribir "¿Desea buscar otro número? (1)Sí (2)No:"
+        Leer salir
+		
+    hasta que salir = 2
+	Escribir "Salio del programa..."
+FinAlgoritmo
