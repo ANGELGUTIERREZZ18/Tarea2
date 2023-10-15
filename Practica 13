@@ -1,0 +1,25 @@
+Algoritmo CalcularCostoPlato
+    Definir cantidadProductos Como Entero
+	// Definimos un arreglo para almacenar los precios de los productos
+    Dimension  precios[100]  
+    Definir costoTotal Como Real
+	
+    Escribir "Ingrese la cantidad de productos para la preparación del plato:"
+    Leer cantidadProductos
+	
+    // Inicializar el costo total a cero.
+    costoTotal <- 0
+	
+    // Leer los precios de los productos.
+    Para i = 1 Hasta cantidadProductos Con Paso 1 Hacer
+        Escribir "Ingrese el precio del producto ", i, ":"
+        Leer precios[i]
+		
+        // Añadir el precio del producto al costo total.
+        costoTotal <- costoTotal + precios[i]
+    Fin Para
+	
+    // Mostrar el costo total a pagar.
+    Escribir "El costo total a pagar por la preparación del plato es: $", costoTotal
+	
+FinAlgoritmo
