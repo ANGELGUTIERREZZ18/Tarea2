@@ -1,1 +1,30 @@
-
+Algoritmo EncontrarMayor
+    Definir n Como Entero
+    Dimension vector[100]
+    Definir mayor, posicionMayor Como Entero
+	
+    Escribir "Ingrese la cantidad de elementos en el vector:"
+    Leer n
+	
+    // Llenar el vector con valores.
+    Para i = 1 Hasta n Con Paso 1 Hacer
+        Escribir "Ingrese el elemento ", i, ":"
+        Leer vector[i]
+    Fin Para
+	
+    // Inicializar la variable 'mayor' con el primer elemento del vector.
+    mayor <- vector[1]
+    posicionMayor <- 1
+	
+    // Buscar el número mayor y su posición.
+    Para i = 2 Hasta n Con Paso 1 Hacer
+        Si vector[i] > mayor Entonces
+            mayor <- vector[i]
+            posicionMayor <- i
+        Fin Si
+    Fin Para
+	
+    Escribir "El número mayor es: ", mayor
+    Escribir "Se encuentra en la posición: ", posicionMayor
+	
+FinAlgoritmo
