@@ -17,7 +17,7 @@ Algoritmo EncontrarMayor
     posicionMayor <- 1
 	
     // Buscar el número mayor y su posición.
-    Para i = 2 Hasta n Con Paso 1 Hacer
+    Para i = 1 Hasta n Con Paso 1 Hacer
         Si vector[i] > mayor Entonces
             mayor <- vector[i]
             posicionMayor <- i
